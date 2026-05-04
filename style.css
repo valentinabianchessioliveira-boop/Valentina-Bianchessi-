@@ -10,6 +10,12 @@
      background-color: lightcyan;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;}
+    align-content: flex-start;
+}
+
+.links{
+     display: flex;
+     flex-direction: column;
+}
 
      
