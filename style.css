@@ -18,4 +18,9 @@
      flex-direction: column;
 }
 
-     
+a{
+    margin: 20px;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
