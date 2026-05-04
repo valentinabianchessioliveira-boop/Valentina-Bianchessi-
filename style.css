@@ -9,7 +9,7 @@
     body{
      background-color: lightcyan;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-content: flex-start;
 }
 
