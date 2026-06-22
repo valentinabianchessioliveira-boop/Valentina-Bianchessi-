@@ -1,72 +1,297 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AGRONATIVA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agronativa</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#a8e65a;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:90px;
+    color:#5b0032;
+    font-weight:900;
+    margin-bottom:20px;
+}
+
+.menu{
+    background:#ff6b00;
+    color:white;
+    padding:10px 40px;
+    display:inline-block;
+    position:absolute;
+    top:30px;
+    right:30px;
+    font-weight:bold;
+}
+
+.banner{
+    width:70%;
+    max-width:900px;
+    border-radius:5px;
+}
+
+/* SEÇÕES */
+
+section{
+    padding:40px;
+}
+
+.titulo{
+    font-size:60px;
+    color:#5b0032;
+    font-weight:900;
+    margin-bottom:30px;
+}
+
+.info{
+    background:#dcef3f;
+    padding:20px;
+}
+
+.card{
+    border:2px solid #5b0032;
+    border-radius:30px;
+    padding:20px;
+    margin-bottom:20px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.card h3{
+    min-width:250px;
+    color:#5b0032;
+    font-size:35px;
+}
+
+.card p{
+    font-size:22px;
+}
+
+/* GALERIA */
+
+.galeria{
+    background:#5b0032;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.galeria img{
+    width:280px;
+    height:380px;
+    object-fit:cover;
+}
+
+/* SERVIÇOS */
+
+.servicos{
+    background:#dcef3f;
+}
+
+.servico{
+    border:2px solid #5b0032;
+    border-radius:30px;
+    padding:20px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.servico h3{
+    width:35%;
+    color:#5b0032;
+    font-size:40px;
+}
+
+.servico ul{
+    width:60%;
+    font-size:22px;
+}
+
+/* RODAPÉ */
+
+footer{
+    padding:40px;
+    background:#a8e65a;
+}
+
+footer img{
+    width:100%;
+    border-radius:30px;
+    margin-bottom:30px;
+}
+
+.rodape{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.frase{
+    color:#5b0032;
+    font-size:50px;
+    font-weight:900;
+    width:40%;
+}
+
+.contato{
+    font-size:22px;
+}
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:50px;
+    }
+
+    .titulo{
+        font-size:40px;
+    }
+
+    .card,
+    .servico{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .servico h3,
+    .servico ul,
+    .frase{
+        width:100%;
+    }
+
+    .banner{
+        width:100%;
+    }
+}
+
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>AGRONATIVA</h1>
-        <p>MENU</p>
-        <img src="voluntarios-e-um-miudo-a-plantar-arvores-e-a-cobrir-buracos-no-chao_482257-91057.avif" alt="">
-    </header>
-    <section>
-        <h2>DETALHAMENTO DA EMPRESA:</h2>
-        <div> 
-            <h2>🌱 Nossa História</h2>
-            <p>A Agronativa nasceu com o propósito de unir agricultura sustentável, produtividade e cuidado com a natureza.</p>
+
+<header>
+
+    <div class="menu">MENU →</div>
+
+    <h1>AGRONATIVA</h1>
+
+    <img class="banner"
+    src="voluntarios-e-um-miudo-a-plantar-arvores-e-a-cobrir-buracos-no-chao_482257-91057.avif">
+
+</header>
+
+<section class="info">
+
+    <h2 class="titulo">DETALHAMENTO DA EMPRESA:</h2>
+
+    <div class="card">
+        <h3>🌱 NOSSA HISTÓRIA</h3>
+        <p>A Agronativa nasceu com o propósito de unir agricultura sustentável, produtividade e cuidado com a natureza.</p>
+    </div>
+
+    <div class="card">
+        <h3>🤝 NOSSO PROPÓSITO</h3>
+        <p>Ajudar produtores rurais com soluções sustentáveis e suporte técnico especializado.</p>
+    </div>
+
+    <div class="card">
+        <h3>🚜 NOSSO COMPROMISSO</h3>
+        <p>Promover um campo mais produtivo, equilibrado e preparado para o futuro.</p>
+    </div>
+
+</section>
+
+<section class="galeria">
+
+    <img src="3C0089FF-25A2-4FF7-AECC-40E0239DC589_L0_001-25_05_2026, 13_22_02.jpg">
+
+    <img src="14F1D79D-2C6B-4F1C-8100-C3F3EE399264_L0_001-25_05_2026, 12_50_16.jpg">
+
+    <img src="30921A68-620E-49C5-AEF4-01127C27BE8B_L0_001-25_05_2026, 13_22_02.jpg">
+
+</section>
+
+<section class="servicos">
+
+    <h2 class="titulo">NOSSOS SERVIÇOS:</h2>
+
+    <div class="servico">
+        <h3>MANEJO SUSTENTÁVEL</h3>
+        <ul>
+            <li>Produção agrícola com preservação ambiental.</li>
+            <li>Uso eficiente dos recursos naturais.</li>
+            <li>Redução de impactos no meio ambiente.</li>
+        </ul>
+    </div>
+
+    <div class="servico">
+        <h3>RECUPERAÇÃO DE SOLO</h3>
+        <ul>
+            <li>Análise da qualidade do solo.</li>
+            <li>Recuperação de áreas degradadas.</li>
+            <li>Melhoria da fertilidade do terreno.</li>
+        </ul>
+    </div>
+
+    <div class="servico">
+        <h3>ASSISTÊNCIA TÉCNICA RURAL</h3>
+        <ul>
+            <li>Orientação ao produtor rural.</li>
+            <li>Planejamento da propriedade.</li>
+            <li>Apoio técnico no campo.</li>
+        </ul>
+    </div>
+
+</section>
+
+<footer>
+
+    <img src="ater-sustentabilidade.jpg">
+
+    <div class="rodape">
+
+        <h2 class="frase">
+            "CULTIVANDO PRODUTIVIDADE COM CONSCIÊNCIA."
+        </h2>
+
+        <div class="contato">
+            <p>Rua Theodoro Makiolka, 155</p>
+            <p>Curitiba - PR</p>
         </div>
-        <div>
-            <h2>🤝 Nosso Propósito</h2>
-            <p>Ajudar produtores rurais com soluções sustentáveis e suporte técnico especializado.</p>
+
+        <div class="contato">
+            <p>Tel: (41) 99583-6704</p>
+            <p>E-mail: agronativa@grandesite.com.br</p>
+            <p>@agronativa</p>
         </div>
-        <div>
-            <h2>🚜 Nosso Compromisso</h2>
-            <p>Promover um campo mais produtivo, equilibrado e preparado para o futuro.</p>
-        </div>
-    </section>
-    <section style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-    <img src="3C0089FF-25A2-4FF7-AECC-40E0239DC589_L0_001-25_05_2026, 13_22_02.jpg" alt="" style="width: 200px; height: 150px; object-fit: cover; border-radius: 8px;">
-    <img src="14F1D79D-2C6B-4F1C-8100-C3F3EE399264_L0_001-25_05_2026, 12_50_16.jpg" alt="" style="width: 200px; height: 150px; object-fit: cover; border-radius: 8px;">
-    <img src="30921A68-620E-49C5-AEF4-01127C27BE8B_L0_001-25_05_2026, 13_22_02.jpg" alt="" style="width: 200px; height: 150px; object-fit: cover; border-radius: 8px;">
-    </section>
-    <section>
-        <h2>Nossos serviços:</h2>
-        <div>
-            <h2>Manejo Sustentável</h2>
-            <ul>
-                <li>Produção agrícola com preservação ambiental.</li>
-                <li>Uso eficiente dos recursos naturais.</li>
-                <li>Redução de impactos no meio ambiente.</li>
-            </ul>
-        </div>
-        <div>
-        <h2>Recuperação de solo</h2>
-            <ul>
-                <li>Análise da qualidade do solo.</li>
-                <li>Recuperação de áreas degradadas.</li>
-                <li>Melhoria da fertilidade do terreno.</li>
-            </ul>
-        </div>
-        <div>
-            <h2>Assistência Técnica Rural</h2>
-            <ul>
-                <li>Orientação ao produtor rural.</li>
-                <li>Planejamento da propriedade.</li>
-                <li>Apoio técnico no campo.</li>
-            </ul>
-        </div>
-    </section>
-    <section>
-        <img src="ater-sustentabilidade.jpg" alt="">
-        <div>
-            <h2>"Cultivando produtividade com consciência."</h2>
-            <p>Rua Theodoro Makiolka, 155-Curitiba- PR</p>
-            <p>Tel: (41) 99583-6704
-E-mail: agronativa@grandesite.com.br
-Redes sociais: @agronativa</p>
-        </div>
-    </section>
+
+    </div>
+
+</footer>
+
 </body>
-</html>            
+</html>          
