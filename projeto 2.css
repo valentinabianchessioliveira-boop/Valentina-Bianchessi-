@@ -20,7 +20,7 @@ header {
 }
 
 .banner {
-    width: 70%;
+    width: 60%;
 }
 
 .titulo {
@@ -80,7 +80,7 @@ footer {
 }
 
 .frase {
-    color: lightgreen;
+    color: rgb(68, 95, 102);
     font-style: italic;
 }
 
