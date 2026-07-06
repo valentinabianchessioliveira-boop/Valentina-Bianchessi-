@@ -20,7 +20,7 @@ header {
 }
 
 .banner {
-    width: 100%;
+    width: 70%;
 }
 
 .titulo {
@@ -62,7 +62,7 @@ header {
 }
 
 footer {
-    background-color: #f8e912;
+    background-color: #abee7f;
     color: white;
     text-align: center;
     padding: 20px;
