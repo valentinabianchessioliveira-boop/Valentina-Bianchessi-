@@ -1,89 +1,106 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #edf0ea;
-    color: #333;
+    font-family: Arial;
+    background-color: #b8ff54;
 }
 
+
 header {
-    background-color: #2e7d32;
-    color: white;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+}
+
+h1 {
+    color: #4b0038;
+    font-size: 90px;
 }
 
 .menu {
-    text-align: left;
-    margin-left: 20px;
-    font-weight: bold;
+    background-color: orange;
+    color: white;
+    width: 120px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: 30px;
+    text-align: center;
+    border: 1px solid black;
 }
 
 .banner {
-    width: 60%;
+    width: 70%;
+    margin-top: 20px;
 }
+
 
 .titulo {
-    text-align: center;
-    color: darkgreen;
-    margin: 30px 0;
+    color: #4b0038;
+    font-size: 45px;
+    margin-left: 30px;
 }
 
-.info,
-.servicos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 
-.card,
-.servico {
-    width: 300px;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-}
-
-.galeria {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin: 20px;
-}
-
-.galeria img {
-    width: 300px;
-    height: 200px;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #abee7f;
-    color: white;
-    text-align: center;
+.info {
+    background-color: yellow;
     padding: 20px;
 }
 
-.imagem-final {
-    width: 300px;
-    height: 200px;
-    display: block;
-    margin: 20px auto;
+.card {
+    background-color: yellow;
+    border: 2px solid #4b0038;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
 }
 
-.rodape {
+.card h3 {
+    color: #4b0038;
+}
+
+.card p,
+.card ul {
+    font-size: 20px;
+}
+
+
+
+.galeria {
+    background-color: #4b0038;
+    text-align: center;
+    padding: 40px;
+}
+
+.galeria img {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+
+
+
+.servicos {
+    background-color: yellow;
+    padding: 20px;
+}
+
+
+
+footer {
+    background-color: #b8ff54;
+    padding: 30px;
     text-align: center;
 }
 
-.frase {
-    color: rgb(68, 95, 102);
-    font-style: italic;
+.imagem-final {
+    width: 90%;
+    height: 350px;
+    border-radius: 20px;
 }
 
-.contato p {
-    margin: 5px;
+.frase {
+    color: #4b0038;
+    font-size: 40px;
+}
+
+.contato {
+    font-size: 18px;
 }
