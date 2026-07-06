@@ -88,8 +88,8 @@ footer {
 
 /* Última imagem (menor) */
 .imagem-final {
-    width: 300px;      /* diminui a largura */
-    height: 200px;     /* diminui a altura */
+    width: 450px;      /* diminui a largura */
+    height: 300px;     /* diminui a altura */
     object-fit: cover;
     border-radius: 8px;
     margin: 0 auto 20px;
