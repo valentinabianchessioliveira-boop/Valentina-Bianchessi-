@@ -1,0 +1,181 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#a8e65a;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:90px;
+    color:#5b0032;
+    font-weight:900;
+    margin-bottom:20px;
+}
+
+.menu{
+    background:#ff6b00;
+    color:white;
+    padding:10px 40px;
+    display:inline-block;
+    position:absolute;
+    top:30px;
+    right:30px;
+    font-weight:bold;
+}
+
+.banner{
+    width:70%;
+    max-width:900px;
+    border-radius:5px;
+}
+
+/* SEÇÕES */
+
+section{
+    padding:40px;
+}
+
+.titulo{
+    font-size:60px;
+    color:#5b0032;
+    font-weight:900;
+    margin-bottom:30px;
+}
+
+.info{
+    background:#dcef3f;
+    padding:20px;
+}
+
+.card{
+    border:2px solid #5b0032;
+    border-radius:30px;
+    padding:20px;
+    margin-bottom:20px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.card h3{
+    min-width:250px;
+    color:#5b0032;
+    font-size:35px;
+}
+
+.card p{
+    font-size:22px;
+}
+
+/* GALERIA */
+
+.galeria{
+    background:#5b0032;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.galeria img{
+    width:280px;
+    height:380px;
+    object-fit:cover;
+}
+
+/* SERVIÇOS */
+
+.servicos{
+    background:#dcef3f;
+}
+
+.servico{
+    border:2px solid #5b0032;
+    border-radius:30px;
+    padding:20px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.servico h3{
+    width:35%;
+    color:#5b0032;
+    font-size:40px;
+}
+
+.servico ul{
+    width:60%;
+    font-size:22px;
+}
+
+/* RODAPÉ */
+
+footer{
+    padding:40px;
+    background:#a8e65a;
+}
+
+footer img{
+    width:50%;
+    border-radius:30px;
+    margin-bottom:30px;
+}
+
+.rodape{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.frase{
+    color:#5b0032;
+    font-size:50px;
+    font-weight:900;
+    width:40%;
+}
+
+.contato{
+    font-size:22px;
+}
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:50px;
+    }
+
+    .titulo{
+        font-size:40px;
+    }
+
+    .card,
+    .servico{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .servico h3,
+    .servico ul,
+    .frase{
+        width:100%;
+    }
+
+    .banner{
+        width:100%;
+    }
+}
