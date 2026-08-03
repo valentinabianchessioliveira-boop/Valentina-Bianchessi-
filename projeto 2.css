@@ -78,6 +78,8 @@ h1 {
     background-color: #4b0038;
     text-align: center;
     padding: 40px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
 }
 
 .galeria img {
